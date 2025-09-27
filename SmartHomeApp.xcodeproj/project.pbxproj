@@ -29,9 +29,22 @@
 		181A9A892E868A17004A9DA3 /* SmartHomeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		181A9AB72E869578004A9DA3 /* Exceptions for "SmartHomeApp" folder in "SmartHomeApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 181A9A6C2E868A14004A9DA3 /* SmartHomeApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		181A9A6F2E868A14004A9DA3 /* SmartHomeApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				181A9AB72E869578004A9DA3 /* Exceptions for "SmartHomeApp" folder in "SmartHomeApp" target */,
+			);
 			path = SmartHomeApp;
 			sourceTree = "<group>";
 		};
@@ -393,12 +406,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartHomeApp/SmartHomeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartHomeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = F9U6AU83S9;
+				DEVELOPMENT_TEAM = 8J8BVXMC69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartHomeApp/Info.plist;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "We need access to HomeKit to control your smart lights.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "We need to discover and control your smart lights on the local network.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,7 +426,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mayur.SmartHomeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = lightcloud.smarthomeapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -422,12 +439,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartHomeApp/SmartHomeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SmartHomeApp/Preview Content\"";
-				DEVELOPMENT_TEAM = F9U6AU83S9;
+				DEVELOPMENT_TEAM = 8J8BVXMC69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartHomeApp/Info.plist;
+				INFOPLIST_KEY_NSHomeKitUsageDescription = "We need access to HomeKit to control your smart lights.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "We need to discover and control your smart lights on the local network.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,7 +459,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mayur.SmartHomeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = lightcloud.smarthomeapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
